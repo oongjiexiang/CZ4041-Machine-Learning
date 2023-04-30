@@ -33,6 +33,8 @@ The model architecture of the ensemble is depicted in the figure below. The firs
 In layman-terms, the meta-model has opinions from 3 regressors, and can be informed by the probability from the binary classifier. This can mitigate the issue of predicting all points to have target scores around 0 instead of -30, thus lowering the RMSE.
 
 # How to Read this Repo
+There are 3 subfolders:
+## `notebooks`
 The notebooks in this GitHub are collated, cleaned and documented orderly after the project submission. This includes the seed setting of the entire notebook. Therefore, the best scores obtained as shown in the leaderboard score above may not be retrieved. The updated notebooks with seeds produce results that hit similar scores, although slightly less than the ones attained by the original notebooks during the project work.
 
 Each notebook is denoted in the format "<notebook_order_number>_<description>[_part-i].ipynb", where `[]` means optional. Thus, the notebooks should be read as follows:
@@ -43,3 +45,9 @@ Each notebook is denoted in the format "<notebook_order_number>_<description>[_p
 4. "2b_model-ensemble_part-2.ipynb"
   
 Each notebook begins with a hyperlinked-outline, typically having Introduction, Reusable Utility Functions and Dataset imports. Additional explanations and experiments begin after the Dataset imports.
+
+## `images`
+Images are purely images for the readme file.
+
+## `predictions`
+These are predictions of the best models for each category. Note that the result csv's filename is different from the csv name produced by the notebooks (you can find the names at the last cell of the notebooks, where the prediction dataframes are stored to a csv file) as the uploaded csv files are the exact files that were submitted to Kaggle. It will also facilitate you in locating the exact file that generated the score in the leaderboard ranking screenshot in this readme file. Nevertheless, the csv filenames are sufficient to describe the model that created that file of predictions.
